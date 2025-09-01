@@ -1,0 +1,45 @@
+//MAIN
+
+package exercicio4;
+public class Exercicio4 {
+
+    public static void main(String[] args) {   
+        String frase = "Esta é uma frase de exemplo.";
+
+       
+        ManipulaString manipular = new ManipulaString();
+
+      
+        manipular.mostrarTamanho(frase);
+        manipular.mostrarMaiusculas(frase);
+        manipular.mostrarMinusculas(frase);
+        manipular.mostrarSubstring(frase);
+    }
+}
+
+    //Classe
+    package exercicio4;
+
+public class ManipulaString {
+    
+   
+    public void mostrarTamanho(String frase) {
+        System.out.println("1. Tamanho da frase: " + frase.length());
+    }
+
+   
+    public void mostrarMaiusculas(String frase) {
+        System.out.println("2. Frase em MAIÚSCULAS: " + frase.toUpperCase());
+    }
+
+    
+    public void mostrarMinusculas(String frase) {
+        System.out.println("3. Frase em minúsculas: " + frase.toLowerCase());
+    }
+
+  
+    public void mostrarSubstring(String frase) {
+        String sub = frase.substring(10, 26);
+        System.out.println("4. Substring extraída: " + sub);
+    }
+}
