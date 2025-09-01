@@ -1,0 +1,31 @@
+//Main
+
+package exercicio1;
+
+public class Exercicio1 {
+
+  
+    public static void main(String[] args) {
+     
+        OlaMundo mundo = new OlaMundo ();
+        String ola = mundo.Comprimentar;
+        
+        System.out.println(ola);
+        
+    
+    }
+    
+}
+
+//Classe
+
+package exercicio1;
+
+public class OlaMundo {
+    
+    String Comprimentar= ("Olá,Mundo");
+    public String Ola () {
+        return Comprimentar;
+    }
+}
+  
