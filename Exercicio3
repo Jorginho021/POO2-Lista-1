@@ -1,0 +1,35 @@
+//MAIN
+package classeprincipal3;
+
+public class ClassePrincipal3 {
+
+    public static void main(String[] args) {
+            
+    
+   
+        ClasseConcatena3 c = new ClasseConcatena3();
+
+        // Definindo as partes da mensagem
+        String parte1 = "Olá,";
+        String parte2 = " mundo!";
+
+
+        String mensagem = c.juntar(parte1, parte2);
+
+        
+        System.out.println(mensagem);
+    }
+}
+
+//Classe
+
+package classeprincipal3;
+
+public class ClasseConcatena3 {
+    
+
+    public String juntar(String parte1, String parte2) {
+        return parte1 + parte2;
+        
+    }
+}
