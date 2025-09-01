@@ -1,0 +1,38 @@
+//main
+
+import java.util.Scanner;
+
+
+public class ex2 {
+    public static void main(String[] args) {
+    
+        Scanner scanner = new Scanner(System.in);
+
+     
+        System.out.print("Por favor digite seu nome: ");
+        String nomeDigitado = scanner.nextLine();
+
+        
+        NomeUsuario usuario = new NomeUsuario(nomeDigitado);
+
+      
+        System.out.println("Olá, " + usuario.getNome() + "! Bem-vindo ao programa.");
+
+        
+        scanner.close();
+    }
+}
+
+//Classe
+
+public class NomeUsuario {
+    String nome;
+    
+     public NomeUsuario(String nome) {
+        this.nome = nome;
+    }
+     
+      public String getNome() {
+        return nome;
+    }
+}
